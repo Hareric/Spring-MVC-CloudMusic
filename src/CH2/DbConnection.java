@@ -47,6 +47,7 @@ public class DbConnection
 		}
 		catch (SQLException e) 
 		{
+			System.out.println("连接失败\n");
 			e.printStackTrace();
 		}
 	}
@@ -67,30 +68,58 @@ public class DbConnection
 	
 	public void connSQL(String user, String pwd, String dbName, int port)
 	{
-		this.user = user;
-		this.pwd = pwd;
-		this.dbName = dbName;
 		this.port = port;
-		this.connect();
+		this.connSQL(user, pwd, dbName);
 	}
 	
 	public void connSQL(String user, String pwd, String dbName, String ipAddress)
 	{
-		this.user = user;
-		this.pwd = pwd;
-		this.dbName = dbName;
 		this.ipAddress = ipAddress;
-		this.connect();
+		this.connSQL(user, pwd, dbName);
 	}
 	
 	public void connSQL(String user, String pwd, String dbName,String ipAddress, int port)
 	{
-		this.user = user;
-		this.pwd = pwd;
-		this.dbName = dbName;
 		this.ipAddress = ipAddress;
 		this.port = port;
-		this.connect();
+		this.connSQL(user, pwd, dbName);
+	}
+
+	public void showTable(String tableName) throws Exception
+	{
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try
+		{
+			
+			String sql = "SELECT * FROM ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, tableName);
+			rs = pstmt.executeQuery();
+			while (rs.next())
+			{
+				String name = rs.getString("c_name");
+				String credit = rs.getString("c_credit");
+				String content = rs.getString("c_content");
+				System.out.println("name:" + name + "  credit:" + credit + "  content:" + content);
+			}
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			rs.close();
+	        pstmt.close();
+		}
+		
+		
+	}
+	
+	public void close() throws SQLException
+	{
+		this.conn.close();
 	}
 	
 	/**
@@ -110,10 +139,13 @@ public class DbConnection
 		}
 	}
 	
-	public static void main(String args[])
+	public static void main(String args[]) throws Exception
 	{
 		DbConnection connector = DbConnection.getInstance();
-		connector.connSQL("root", "password", "dbname");
+		connector.connSQL("root", "1q2w3e", "student", 3307);
+		connector.showTable("course");
+		connector.close();
+
 	}
 	
 
