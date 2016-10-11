@@ -1,4 +1,8 @@
 package CH2;
+/**
+* @author Eric_Chan
+* @version 2016.10.05
+*/
 abstract class TravelSuper 
 {
 	String travelMethod;

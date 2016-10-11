@@ -1,14 +1,10 @@
 package CH2;
-
-
-
 import java.sql.*;
 
 /**
- * 单例模式创建mysql连接器
- * @author 20141002419
- *
- */
+* @author Eric_Chan
+* @version 2016.10.10
+*/
 public class DBhealper 
 {
 	private String ipAddress = "127.0.0.1";
@@ -209,6 +205,68 @@ public class DBhealper
 	}
 	
 	/**
+     * 判断记录是否存在
+     *
+     * @param sql
+     * @return Boolean
+     */
+    public Boolean isExist(String sql) throws SQLException
+    {
+        this.connect();
+        Statement stmt = null;
+        Boolean isEx = false;
+        ResultSet rs = null;
+        try 
+        {
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sql);
+            rs.last();
+            isEx = rs.getRow()>0; 
+        } 
+        catch (SQLException e) 
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+        	this.free(conn, stmt, rs);
+        }
+        return isEx;
+    }
+
+    /**
+     * 判断记录是否存在
+     * @param sql
+     * @return Boolean
+     */
+    public Boolean isExist(String sql, Object... obj) throws SQLException
+    {
+    	this.connect();
+        PreparedStatement pstmt = null;
+        Boolean isEx = false;
+        ResultSet rs = null;
+        try 
+        {
+            pstmt = conn.prepareStatement(sql);
+            for (int i = 0; i < obj.length; i++) 
+            {
+                pstmt.setObject(i + 1, obj[i]);
+            }
+            rs = pstmt.executeQuery();
+            rs.last();
+            isEx = rs.getRow()>0;
+        } 
+        catch (SQLException e) 
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            this.free(conn, pstmt, rs);
+        }
+        return isEx;
+    }
+	/**
 	 * 用来释放所有数据资源
 	 * @param conn 
 	 * @param stmt
@@ -252,6 +310,17 @@ public class DBhealper
 		}
 	}
 	
+	public void close()
+	{
+		try
+		{
+			this.conn.close();
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
 	
 	
 	
@@ -260,10 +329,11 @@ public class DBhealper
 		DBhealper connector = DBhealper.getInstance();
 		connector.connSQL("root", "1q2w3e", "student", 3307);
 		// connector.showTable("student");
-		ResultSet rs = connector.executeQuery("SELECT * FROM student");
-		DBhealper.showResultSet(rs);
-	
-
+		//ResultSet rs = connector.executeQuery("SELECT * FROM student WHERE st_name=? and st_Password=?", "Jack", "1234");
+		//DBhealper.showResultSet(rs);
+		Boolean isEx = connector.isExist("SELECT * FROM student WHERE st_name=? and st_Password=?", "Jack", "1234");
+		System.out.println(isEx);
+		connector.close();
 	}
 	
 
