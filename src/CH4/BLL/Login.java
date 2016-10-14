@@ -1,23 +1,26 @@
-package CH3;
+package CH4.BLL;
+
 
 import java.sql.SQLException;
-import CH2.DBhealper;
+import CH4.UI.LoginFrame;
+import CH4.DAL.*;
+import CH4.Model.*;
 /**
 * @author Eric_Chan
-* @version 2016.10.11
+* @version 2016.10.14
 */
-public class StudentLogin extends StudentLoginFrame
+public class Login extends LoginFrame
 {
-	private DBhealper connector;
+	private DbHealper connector;
 	/**
 	 * 初始化框体时连接数据库
 	 */
-    public StudentLogin()
+    public Login()
     {
     	super();
     	try
     	{
-    		connector = DBhealper.getInstance();  
+    		connector = DbHealper.getInstance();  
     		connector.connSQL("root", "1q2w3e", "student", 3307);  // 连接数据库
     	}
     	catch(SQLException e)
@@ -34,7 +37,11 @@ public class StudentLogin extends StudentLoginFrame
     {                                         
         String user = userTextField.getText();
         String pwd = pwdTextField.getText();
-        Boolean isEx = login(user, pwd);
+        Student stu = new Student();
+        stu.setSt_name(user);
+        stu.setSt_password(pwd);
+        Boolean isEx = User.login(stu);
+        
         if (isEx)
         {
             LoginStatus.setText("登录成功");
@@ -45,26 +52,5 @@ public class StudentLogin extends StudentLoginFrame
         }
     }                                        
                                
-    public Boolean login(String user, String pwd)
-    {
-    	Boolean isEx = null;
-    	try
-    	{
-    		
-            isEx = connector.isExist("SELECT * FROM student WHERE st_name=? and st_Password=?", user, pwd);
-    	}
-    	catch (SQLException e)
-    	{
-    		e.printStackTrace();
-    	}
-    	
-        return isEx;
-    }
-    
-    public static void main(String args[]) 
-    {
-    	StudentLogin sl = new StudentLogin();
-    	sl.setVisible(true);
-    }
-    
+
 }
