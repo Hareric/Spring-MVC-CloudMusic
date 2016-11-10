@@ -1,0 +1,49 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container h3 {
+    line-height: 50px;
+}
+form {
+    margin: 20px;
+    color: #fafafa;
+    background: #555;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 240px;
+}
+form > h4 {
+    line-height: 3;
+    padding-left: 15px;
+    text-align: left;
+    border-bottom: solid 1px #111;
+}
+.form-group > label,
+.form-group > input[type=text],
+.form-group > textarea,
+.form-group > select{
+    display: block;
+    width: 90%;
+    margin: 10px 5%;
+    text-align: left;
+}
+.form-group > textarea {
+    height: 300px;
+}
+.form-group input[type=file] {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+form input[type=submit]  {
+    margin: 10px 0 30px 0;
+    padding: 1px 15px;
+    cursor: pointer;
+}

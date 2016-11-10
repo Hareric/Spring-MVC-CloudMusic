@@ -1,0 +1,93 @@
+28-Oct-2016 10:32:08.199 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+28-Oct-2016 10:32:08.205 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2016 10:32:08.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+28-Oct-2016 10:32:08.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+28-Oct-2016 10:32:08.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+28-Oct-2016 10:32:08.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2016 10:32:08.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2016 10:32:08.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2016 10:32:08.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+28-Oct-2016 10:32:08.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+28-Oct-2016 10:32:08.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+28-Oct-2016 10:32:08.208 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+28-Oct-2016 10:32:08.394 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2016 10:32:08.436 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2016 10:32:08.439 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2016 10:32:08.441 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2016 10:32:08.441 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 821 ms
+28-Oct-2016 10:32:08.477 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+28-Oct-2016 10:32:08.477 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+28-Oct-2016 10:32:08.509 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+28-Oct-2016 10:32:08.547 信息 [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/Users/Har/apache-tomcat/webapps/Login_MVC] was found with a last modified time that did not match the associated WAR. It will be deleted.
+28-Oct-2016 10:32:10.853 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Oct-2016 10:32:11.174 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+28-Oct-2016 10:32:11.221 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 10:32:11 CST 2016]; root of context hierarchy
+28-Oct-2016 10:32:11.298 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+28-Oct-2016 10:32:12.523 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+28-Oct-2016 10:32:12.523 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+28-Oct-2016 10:32:12.524 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+28-Oct-2016 10:32:12.524 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+28-Oct-2016 10:32:12.524 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+28-Oct-2016 10:32:12.524 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+28-Oct-2016 10:32:12.689 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 1515 ms
+28-Oct-2016 10:32:12.708 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 4,198 ms
+28-Oct-2016 10:32:12.709 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+28-Oct-2016 10:32:12.732 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 23 ms
+28-Oct-2016 10:32:12.733 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+28-Oct-2016 10:32:13.143 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 410 ms
+28-Oct-2016 10:32:13.144 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+28-Oct-2016 10:32:13.204 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 60 ms
+28-Oct-2016 10:32:13.205 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+28-Oct-2016 10:32:13.251 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 46 ms
+28-Oct-2016 10:32:13.251 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+28-Oct-2016 10:32:13.284 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 33 ms
+28-Oct-2016 10:32:13.292 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+28-Oct-2016 10:32:13.302 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+28-Oct-2016 10:32:13.302 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 4860 ms
+28-Oct-2016 11:37:04.199 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Login_MVC]
+28-Oct-2016 11:37:04.203 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 10:32:11 CST 2016]; root of context hierarchy
+28-Oct-2016 11:37:04.216 警告 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Login_MVC] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Oct-2016 11:37:04.217 警告 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Login_MVC] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+28-Oct-2016 11:37:04.249 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+28-Oct-2016 11:37:06.047 信息 [localhost-startStop-2] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+28-Oct-2016 11:37:06.224 信息 [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 11:37:06 CST 2016]; root of context hierarchy
+28-Oct-2016 11:37:06.285 信息 [localhost-startStop-2] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+28-Oct-2016 11:37:06.714 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+28-Oct-2016 11:37:06.715 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+28-Oct-2016 11:37:06.715 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+28-Oct-2016 11:37:06.715 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+28-Oct-2016 11:37:06.715 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+28-Oct-2016 11:37:06.715 信息 [localhost-startStop-2] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+28-Oct-2016 11:37:06.852 信息 [localhost-startStop-2] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 805 ms
+28-Oct-2016 11:37:06.859 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 2,610 ms
+28-Oct-2016 11:38:06.889 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Login_MVC]
+28-Oct-2016 11:38:06.891 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 11:37:06 CST 2016]; root of context hierarchy
+28-Oct-2016 11:38:06.901 警告 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [Login_MVC] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+28-Oct-2016 11:38:06.902 警告 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [Login_MVC] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+28-Oct-2016 11:38:06.918 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+28-Oct-2016 11:38:08.388 信息 [localhost-startStop-3] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+28-Oct-2016 11:38:08.425 信息 [localhost-startStop-3] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 11:38:08 CST 2016]; root of context hierarchy
+28-Oct-2016 11:38:08.472 信息 [localhost-startStop-3] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+28-Oct-2016 11:38:08.921 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+28-Oct-2016 11:38:08.921 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+28-Oct-2016 11:38:08.922 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+28-Oct-2016 11:38:08.922 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+28-Oct-2016 11:38:08.922 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+28-Oct-2016 11:38:08.923 信息 [localhost-startStop-3] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+28-Oct-2016 11:38:09.063 信息 [localhost-startStop-3] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 667 ms
+28-Oct-2016 11:38:09.069 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 2,151 ms

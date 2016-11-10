@@ -1,0 +1,458 @@
+04-Nov-2016 15:49:01.516 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:49:01.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 15:49:01.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 15:49:01.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 15:49:01.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 15:49:01.522 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 15:49:01.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 15:49:01.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 15:49:01.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 15:49:01.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 15:49:01.523 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 15:49:01.524 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 15:49:01.524 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 15:49:01.525 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 15:49:01.525 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 15:49:01.525 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 15:49:01.525 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 15:49:01.525 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 15:49:01.526 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 15:49:01.724 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:49:01.770 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:49:01.773 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:49:01.775 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:49:01.775 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 883 ms
+04-Nov-2016 15:49:01.812 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 15:49:01.812 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:49:01.847 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 15:49:04.297 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:49:04.494 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 2,646 ms
+04-Nov-2016 15:49:04.504 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 15:49:06.031 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:49:06.291 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 15:49:06.330 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:49:06 CST 2016]; root of context hierarchy
+04-Nov-2016 15:49:06.386 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 15:49:07.543 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 15:49:07.544 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 15:49:07.544 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 15:49:07.544 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 15:49:07.545 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 15:49:07.545 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 15:49:07.715 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 1424 ms
+04-Nov-2016 15:49:07.718 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 3,214 ms
+04-Nov-2016 15:49:07.719 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 15:49:07.739 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 20 ms
+04-Nov-2016 15:49:07.739 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 15:49:08.221 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 482 ms
+04-Nov-2016 15:49:08.222 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 15:49:08.254 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 32 ms
+04-Nov-2016 15:49:08.255 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 15:49:08.284 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 28 ms
+04-Nov-2016 15:49:08.284 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 15:49:08.300 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 16 ms
+04-Nov-2016 15:49:08.306 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 15:49:08.314 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 15:49:08.315 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 6538 ms
+04-Nov-2016 15:50:58.393 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 15:50:58.435 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 15:51:00.372 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,936 ms
+04-Nov-2016 15:51:10.165 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:51:10.225 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:51:10.282 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 15:51:10.327 信息 [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:49:06 CST 2016]; root of context hierarchy
+04-Nov-2016 15:51:10.344 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:51:10.348 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:51:10.349 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:51:10.350 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:51:12.484 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:51:12.489 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 15:51:12.490 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 15:51:12.491 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 15:51:12.491 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 15:51:12.492 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 15:51:12.493 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 15:51:12.493 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 15:51:12.493 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 15:51:12.493 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 15:51:12.493 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 15:51:12.494 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 15:51:12.494 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 15:51:12.494 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 15:51:12.670 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:51:12.699 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:51:12.702 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:51:12.703 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:51:12.704 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 720 ms
+04-Nov-2016 15:51:12.742 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 15:51:12.742 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:51:12.776 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 15:51:14.413 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:51:14.493 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,718 ms
+04-Nov-2016 15:51:14.495 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 15:51:16.018 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:51:16.216 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 15:51:16.248 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:51:16 CST 2016]; root of context hierarchy
+04-Nov-2016 15:51:16.308 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 15:51:17.025 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 15:51:17.025 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 15:51:17.026 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 15:51:17.026 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 15:51:17.026 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 15:51:17.027 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 15:51:17.167 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 950 ms
+04-Nov-2016 15:51:17.170 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 2,675 ms
+04-Nov-2016 15:51:17.171 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 15:51:17.196 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 25 ms
+04-Nov-2016 15:51:17.197 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 15:51:17.436 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 239 ms
+04-Nov-2016 15:51:17.437 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 15:51:17.461 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 25 ms
+04-Nov-2016 15:51:17.462 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 15:51:17.490 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 28 ms
+04-Nov-2016 15:51:17.490 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 15:51:17.506 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 16 ms
+04-Nov-2016 15:51:17.513 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 15:51:17.521 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 15:51:17.522 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 4817 ms
+04-Nov-2016 15:52:26.988 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:52:27.057 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:52:27.112 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 15:52:27.148 信息 [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:51:16 CST 2016]; root of context hierarchy
+04-Nov-2016 15:52:27.169 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:52:27.174 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:52:27.176 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:52:27.178 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:52:29.188 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:52:29.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 15:52:29.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 15:52:29.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 15:52:29.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 15:52:29.193 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 15:52:29.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 15:52:29.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 15:52:29.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 15:52:29.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 15:52:29.194 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 15:52:29.195 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 15:52:29.195 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 15:52:29.195 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 15:52:29.196 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 15:52:29.196 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 15:52:29.196 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 15:52:29.196 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 15:52:29.196 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 15:52:29.373 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 15:52:29.408 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:52:29.411 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 15:52:29.413 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 15:52:29.414 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 723 ms
+04-Nov-2016 15:52:29.446 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 15:52:29.446 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 15:52:29.477 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 15:52:29.506 信息 [localhost-startStop-1] org.apache.catalina.startup.ExpandWar.expand An expanded directory [/Users/Har/apache-tomcat/webapps/CloudMusic] was found with a last modified time that did not match the associated WAR. It will be deleted.
+04-Nov-2016 15:52:31.613 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:52:31.706 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 2,228 ms
+04-Nov-2016 15:52:31.708 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 15:52:33.103 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 15:52:33.283 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 15:52:33.312 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:52:33 CST 2016]; root of context hierarchy
+04-Nov-2016 15:52:33.373 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 15:52:34.073 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 15:52:34.074 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 15:52:34.074 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 15:52:34.074 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 15:52:34.074 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 15:52:34.075 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 15:52:34.221 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 938 ms
+04-Nov-2016 15:52:34.224 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 2,516 ms
+04-Nov-2016 15:52:34.225 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 15:52:34.258 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 33 ms
+04-Nov-2016 15:52:34.259 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 15:52:34.608 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 349 ms
+04-Nov-2016 15:52:34.609 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 15:52:34.634 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 25 ms
+04-Nov-2016 15:52:34.634 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 15:52:34.656 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 22 ms
+04-Nov-2016 15:52:34.656 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 15:52:34.670 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 14 ms
+04-Nov-2016 15:52:34.677 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 15:52:34.685 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 15:52:34.686 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 5271 ms
+04-Nov-2016 15:59:34.929 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 15:59:34.968 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 15:59:36.965 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,997 ms
+04-Nov-2016 16:05:07.163 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:05:07.185 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:05:08.463 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,277 ms
+04-Nov-2016 16:05:22.930 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:05:22.997 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:05:23.053 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 16:05:23.100 信息 [localhost-startStop-4] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 15:52:33 CST 2016]; root of context hierarchy
+04-Nov-2016 16:05:23.117 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:05:23.121 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:05:23.122 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:05:23.123 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:05:25.144 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:05:25.149 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 16:05:25.149 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 16:05:25.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 16:05:25.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 16:05:25.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 16:05:25.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 16:05:25.150 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 16:05:25.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 16:05:25.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 16:05:25.151 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 16:05:25.152 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 16:05:25.152 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 16:05:25.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 16:05:25.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 16:05:25.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 16:05:25.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 16:05:25.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 16:05:25.154 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 16:05:25.328 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:05:25.364 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:05:25.367 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:05:25.369 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:05:25.370 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 719 ms
+04-Nov-2016 16:05:25.408 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 16:05:25.409 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:05:25.443 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:05:27.157 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:05:27.248 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,804 ms
+04-Nov-2016 16:05:27.252 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 16:05:29.236 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:05:29.434 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 16:05:29.471 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:05:29 CST 2016]; root of context hierarchy
+04-Nov-2016 16:05:29.536 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 16:05:30.261 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 16:05:30.262 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 16:05:30.262 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 16:05:30.262 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 16:05:30.262 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 16:05:30.263 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 16:05:30.419 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 985 ms
+04-Nov-2016 16:05:30.422 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 3,169 ms
+04-Nov-2016 16:05:30.423 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 16:05:30.449 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 26 ms
+04-Nov-2016 16:05:30.449 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 16:05:30.691 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 241 ms
+04-Nov-2016 16:05:30.691 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 16:05:30.717 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 26 ms
+04-Nov-2016 16:05:30.717 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 16:05:30.739 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 22 ms
+04-Nov-2016 16:05:30.739 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 16:05:30.755 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 16 ms
+04-Nov-2016 16:05:30.761 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 16:05:30.767 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 16:05:30.770 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 5400 ms
+04-Nov-2016 16:07:10.822 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:07:10.850 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:07:12.557 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,708 ms
+04-Nov-2016 16:07:19.262 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:07:19.333 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:07:19.385 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 16:07:19.424 信息 [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:05:29 CST 2016]; root of context hierarchy
+04-Nov-2016 16:07:19.448 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:07:19.452 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:07:19.453 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:07:19.455 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:07:21.115 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:07:21.120 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 16:07:21.120 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 16:07:21.120 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 16:07:21.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 16:07:21.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 16:07:21.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 16:07:21.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 16:07:21.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 16:07:21.122 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 16:07:21.122 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 16:07:21.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 16:07:21.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 16:07:21.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 16:07:21.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 16:07:21.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 16:07:21.124 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 16:07:21.124 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 16:07:21.124 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 16:07:21.279 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:07:21.313 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:07:21.316 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:07:21.318 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:07:21.318 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 696 ms
+04-Nov-2016 16:07:21.366 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 16:07:21.367 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:07:21.397 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:07:23.164 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:07:23.245 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,848 ms
+04-Nov-2016 16:07:23.247 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 16:07:25.037 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:07:25.305 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 16:07:25.345 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:07:25 CST 2016]; root of context hierarchy
+04-Nov-2016 16:07:25.414 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 16:07:26.170 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 16:07:26.170 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 16:07:26.171 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 16:07:26.171 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 16:07:26.171 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 16:07:26.171 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 16:07:26.327 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 1022 ms
+04-Nov-2016 16:07:26.331 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 3,083 ms
+04-Nov-2016 16:07:26.332 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 16:07:26.357 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 25 ms
+04-Nov-2016 16:07:26.358 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 16:07:26.598 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 241 ms
+04-Nov-2016 16:07:26.598 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 16:07:26.633 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 35 ms
+04-Nov-2016 16:07:26.634 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 16:07:26.656 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 22 ms
+04-Nov-2016 16:07:26.656 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 16:07:26.671 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 15 ms
+04-Nov-2016 16:07:26.677 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 16:07:26.690 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 16:07:26.693 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 5373 ms
+04-Nov-2016 16:31:27.427 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:31:27.475 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:31:29.723 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 2,247 ms
+04-Nov-2016 16:33:49.806 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:33:49.839 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:33:51.761 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,922 ms
+04-Nov-2016 16:33:54.365 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:33:54.433 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:33:54.486 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 16:33:54.567 信息 [localhost-startStop-3] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:07:25 CST 2016]; root of context hierarchy
+04-Nov-2016 16:33:54.583 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:33:54.586 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:33:54.588 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:33:54.588 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:33:56.153 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:33:56.158 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 16:33:56.158 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 16:33:56.158 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 16:33:56.159 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 16:33:56.160 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 16:33:56.161 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 16:33:56.161 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 16:33:56.161 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 16:33:56.161 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 16:33:56.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 16:33:56.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 16:33:56.162 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 16:33:56.162 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 16:33:56.331 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:33:56.358 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:33:56.360 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:33:56.362 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:33:56.362 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 692 ms
+04-Nov-2016 16:33:56.396 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 16:33:56.396 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:33:56.428 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:33:58.056 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:33:58.168 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,739 ms
+04-Nov-2016 16:33:58.170 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 16:33:59.710 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:33:59.888 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 16:33:59.919 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:33:59 CST 2016]; root of context hierarchy
+04-Nov-2016 16:33:59.975 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 16:34:00.730 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 16:34:00.731 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 16:34:00.731 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 16:34:00.731 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 16:34:00.732 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 16:34:00.732 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 16:34:00.889 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 1001 ms
+04-Nov-2016 16:34:00.893 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 2,722 ms
+04-Nov-2016 16:34:00.894 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 16:34:00.916 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 22 ms
+04-Nov-2016 16:34:00.917 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 16:34:01.218 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 302 ms
+04-Nov-2016 16:34:01.219 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 16:34:01.242 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 23 ms
+04-Nov-2016 16:34:01.243 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 16:34:01.262 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 19 ms
+04-Nov-2016 16:34:01.263 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 16:34:01.278 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 15 ms
+04-Nov-2016 16:34:01.284 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 16:34:01.291 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 16:34:01.292 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 4928 ms
+04-Nov-2016 16:45:41.635 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:45:41.686 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:45:44.053 信息 [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 2,366 ms
+04-Nov-2016 16:46:14.079 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/CloudMusic]
+04-Nov-2016 16:46:14.102 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:46:15.632 信息 [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 1,529 ms
+04-Nov-2016 16:48:35.775 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:48:35.838 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:48:35.890 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+04-Nov-2016 16:48:35.983 信息 [localhost-startStop-4] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:33:59 CST 2016]; root of context hierarchy
+04-Nov-2016 16:48:36.015 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:48:36.019 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:48:36.022 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:48:36.023 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:48:38.198 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:48:38.206 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 18:54:10 UTC
+04-Nov-2016 16:48:38.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.0.0
+04-Nov-2016 16:48:38.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Nov-2016 16:48:38.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.1
+04-Nov-2016 16:48:38.207 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Nov-2016 16:48:38.208 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+04-Nov-2016 16:48:38.208 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_60-b27
+04-Nov-2016 16:48:38.208 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Nov-2016 16:48:38.209 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/Har/apache-tomcat
+04-Nov-2016 16:48:38.209 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/Har/apache-tomcat
+04-Nov-2016 16:48:38.210 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/Har/apache-tomcat/conf/logging.properties
+04-Nov-2016 16:48:38.210 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Nov-2016 16:48:38.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Nov-2016 16:48:38.211 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Nov-2016 16:48:38.212 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/Har/apache-tomcat
+04-Nov-2016 16:48:38.212 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/Har/apache-tomcat
+04-Nov-2016 16:48:38.212 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/Har/apache-tomcat/temp
+04-Nov-2016 16:48:38.212 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Har/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+04-Nov-2016 16:48:38.518 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Nov-2016 16:48:38.563 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:48:38.566 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Nov-2016 16:48:38.569 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Nov-2016 16:48:38.570 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1336 ms
+04-Nov-2016 16:48:38.625 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Nov-2016 16:48:38.626 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.0.M11
+04-Nov-2016 16:48:38.660 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war
+04-Nov-2016 16:48:41.842 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:48:41.942 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/CloudMusic.war has finished in 3,280 ms
+04-Nov-2016 16:48:41.944 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war
+04-Nov-2016 16:48:44.580 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Nov-2016 16:48:44.927 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization started
+04-Nov-2016 16:48:45.019 信息 [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Nov 04 16:48:45 CST 2016]; root of context hierarchy
+04-Nov-2016 16:48:45.186 信息 [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Login_MVC-servlet.xml]
+04-Nov-2016 16:48:46.519 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student] onto handler 'studentController'
+04-Nov-2016 16:48:46.522 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student.*] onto handler 'studentController'
+04-Nov-2016 16:48:46.522 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/student/] onto handler 'studentController'
+04-Nov-2016 16:48:46.525 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin] onto handler 'studentController'
+04-Nov-2016 16:48:46.526 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin.*] onto handler 'studentController'
+04-Nov-2016 16:48:46.527 信息 [localhost-startStop-1] org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping.registerHandler Mapped URL path [/studentLogin/] onto handler 'studentController'
+04-Nov-2016 16:48:46.850 信息 [localhost-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Login_MVC': initialization completed in 1923 ms
+04-Nov-2016 16:48:46.857 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /Users/Har/apache-tomcat/webapps/Login_MVC.war has finished in 4,913 ms
+04-Nov-2016 16:48:46.858 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/docs
+04-Nov-2016 16:48:46.897 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/docs has finished in 39 ms
+04-Nov-2016 16:48:46.898 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/examples
+04-Nov-2016 16:48:47.438 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/examples has finished in 540 ms
+04-Nov-2016 16:48:47.439 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/host-manager
+04-Nov-2016 16:48:47.488 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/host-manager has finished in 48 ms
+04-Nov-2016 16:48:47.488 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/manager
+04-Nov-2016 16:48:47.543 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/manager has finished in 55 ms
+04-Nov-2016 16:48:47.545 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/Har/apache-tomcat/webapps/ROOT
+04-Nov-2016 16:48:47.566 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/Har/apache-tomcat/webapps/ROOT has finished in 20 ms
+04-Nov-2016 16:48:47.572 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+04-Nov-2016 16:48:47.582 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+04-Nov-2016 16:48:47.582 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 9011 ms

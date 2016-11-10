@@ -1,0 +1,81 @@
+@charset 'utf-8';
+.main{
+	width: 600px;
+	padding: 50px;
+	overflow: hidden;
+}
+.main .main-title {
+	overflow: hidden;
+	border-bottom: solid 1px #ccc;
+}
+.main .main-title h3{
+	font-size: 20px;
+	line-height: 40px;
+	float: left;
+}
+.main .main-title span {
+	display: block;
+	font-size: 16px;
+	float: left;
+	margin-left: 20px;
+	line-height: 45px;
+}
+.main .content {
+	width: 300px;
+	float: right;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 25px;
+	min-height: 550px;
+}
+.main .content.txtOF {
+	height: 400px;
+	overflow: hidden;
+}
+.main .content p.active,
+.main .content p:first-child {
+	color: #F70324;
+	font-size: 18px;
+	padding: 10px 0;
+}
+.main a{
+	width: 100%;
+	clear: both;
+	color: blue;
+	line-height: 30px;
+	margin-left: 300px;
+	display: block;
+}
+.comment {
+	padding: 50px;
+}
+.comment h2 {
+	width: 700px;
+	line-height: 35px;
+	margin-bottom: 5px;
+}
+.comment .cell {
+	width: 700px;
+	padding: 20px 0;
+	overflow: hidden;
+	border-top: solid 1px #ccc;
+}
+.comment .cell textarea {
+	width: 680px;
+	height: 100px;
+	padding: 5px;
+}
+.comment .cell input {
+	width: 150px;
+	height: 25px;
+	margin-top: 10px;
+	margin-right: 20px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	float: right;
+}
+.comment .cell i.btn-add{
+	display: block;
+	float: right;
+	cursor: pointer;
+}

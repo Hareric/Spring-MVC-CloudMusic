@@ -1,0 +1,524 @@
+@charset 'utf-8';
+
+/*-------主页内容-------*/
+.wrap {
+	padding-top: 460px;
+	background: #fafafa url('../image/wrap-in.png') no-repeat center top;
+	background-size: 1400px;
+}
+.wrap-in .column{
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	clear: both;
+}
+/*--wrap第1模块--头部--*/ /*包含.btns、.slides、.aside三部分*/
+.wrap-in .main-top{
+	height: 265px;
+}
+/*.btns*/
+.wrap-in .main-top .btns{
+	width: 19%;
+    height: 100%;
+    float: left;
+}
+.wrap-in .main-top .btns a{
+	color: #ddd;
+	text-align: center;
+    display: block;
+    font-weight: 900;
+}
+.wrap-in .main-top .btns a.btn-down{
+	height: 150px;
+    line-height: 150px;
+    font-size: 20px;
+    background: #9F25DB;
+    background: radial-gradient(circle,rgba(122,5,228,1),rgba(194,46,249,0.8));/*css3*/
+}
+.wrap-in .main-top .btns a.btn-reg,
+.wrap-in .main-top .btns a.btn-browse{
+    width: 103px;
+    float: left;
+    font-size: 13px;
+    text-indent: 10px;
+    line-height: 55px;
+    background: #61468F;
+}
+.wrap-in .main-top .btns .tool-border{
+	width: 3px;
+	float: left;
+	height: 55px;
+	background: #503779;
+}
+.wrap-in .main-top .btns a.btn-gift{
+	clear: both;
+	font-size: 16px;
+	line-height: 60px;
+    text-indent: 10px;
+	color: #0F3C8D;
+	background: #45D6FF;
+}
+.wrap-in .main-top .btns a.btn-reg:hover{
+	background: #503779;
+}
+.wrap-in .main-top .btns a.btn-browse:hover{
+	background: #503779;
+}
+.wrap-in .main-top .btns a.btn-gift:hover{
+	background: #51EAEF;
+}
+/*slides*/
+.wrap-in .main-top .slides{
+	width: 53%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.wrap-in .main-top .slides ul.points{
+	position: absolute;
+}
+.wrap-in .main-top .slides ul.points li{
+	width: 583px;
+	float: left;
+}
+.wrap-in .main-top .slides ul.sub-tips{
+    width: 100%;
+	position: absolute;
+    color: #ddd;
+    padding: 5px 0;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+}
+.wrap-in .main-top .slides ul.sub-bg{
+	background: linear-gradient(rgba(0,0,0,0),rgba(30,30,30,0.8));/*cs3*/
+}
+.wrap-in .main-top .slides ul.sub-tips li{
+	cursor: pointer;
+    width: 25px;
+    float: left;
+}
+.wrap-in .main-top .slides ul.sub-tips li:first-child{/*css3*/
+	margin-left: 230px;
+}
+.wrap-in .main-top .slides ul.sub-tips li:hover,
+.wrap-in .main-top .slides ul.sub-tips li.active{
+	color: #0F3C8D;
+}
+
+/*.aside*/
+.wrap-in .main-top .aside{
+	width: 26%;		/*总宽度28% */
+	padding: 0 1%;  /*26+1+1 = 28% */
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	background: #fff;
+}
+.wrap-in .main-top .aside ul.aside-tab{
+	width: 100%;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    border-bottom: 1px solid #999;
+}
+.wrap-in .main-top .aside ul.aside-tab li{
+	width: 18%;
+	margin: 0 1.5%;
+	float: left;
+	text-align: center;
+}
+.wrap-in .main-top .aside ul.aside-tab li a{
+	color: #333;
+    display: block;
+}
+.wrap-in .main-top .aside ul.aside-tab li a:hover,
+.wrap-in .main-top .aside ul.aside-tab li a.active{
+	color: blue;
+	border-bottom: solid 2px blue;
+}
+.wrap-in .main-top .aside ul.aside-tab li.tab-tool{
+	width: 6%;
+	font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+.wrap-in .main-top .aside ul.aside-list{
+	clear: both;
+	padding: 5% 0;
+	font-size: 14px;
+}
+.wrap-in .main-top .aside ul.aside-list li{
+	line-height: 28px;
+}
+.wrap-in .main-top .aside ul.aside-list li a{
+	width: 80%;
+	color: #333;
+	display: block;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.wrap-in .main-top .aside ul.aside-list li span{
+	display: block;
+	float: right;
+}
+.wrap-in .main-top .aside ul.aside-list li a:hover,
+.wrap-in .main-top .aside ul.aside-list li a.active{
+	color: red;
+}
+/*----End-----*/
+/*----wrap第2模块--中层---*/
+.wrap-in .column.main-type{
+	width: 100%;
+	height: 120px;
+}
+.wrap-in .column .enter{
+	width: 19%;
+	height: 100%;
+	float: left;
+	background: #fff;
+}
+.wrap-in .column .enter ul{
+	width: 100%;
+}
+.wrap-in .column .enter ul li a{
+	color: #333;
+	display: block;
+}
+.wrap-in .column .enter ul.enter-btns li{
+	width: 49.5%;
+	line-height: 50px;
+	font-size: 14px;
+	float: left;
+	display: block;
+	text-align: center;
+}
+.wrap-in .column .enter ul.enter-share{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #ccc;
+}
+.wrap-in .column .enter ul.enter-share li{
+	width: 32%;
+	line-height: 20px;
+	float: left;
+	text-align: center;
+}
+.wrap-in .column .acts{
+	width: 80%;
+	height: 100%;
+	float: right;
+}
+.wrap-in .column .acts ul li{
+	width: 24%;
+	margin: 0 0 0 1%;
+	float: left;
+}
+.wrap-in .column .enter ul.enter-btns li a:hover{
+	background: #ccc;
+}
+.wrap-in .column .enter ul.enter-share li a:hover{
+	color: #eee;
+	background: #666;
+}
+.wrap-in .column .enter ul li.border-aside{
+	width: 1%;
+	height: 50px;
+	background: #ccc;
+}
+.wrap-in .column .enter ul li.border{
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+}
+.wrap-in .column .enter ul li.bdr-aside{
+	width: 1%;
+}
+
+/*----End-----*/
+/*----wrap第3模块---新碟上架---*/
+.wrap-in .column .section{
+	width: 75%;
+	height: 100%;
+	float: left;
+	background: #fff;
+	overflow: hidden;
+}
+.wrap-in .column.main-pro .section{
+	width: 71%;
+}
+.wrap-in .column .section h3{
+	font-size: 18px;
+	margin: 0 2%;
+	padding: 1% 4%;
+	border-bottom: solid 1px #ccc;
+}
+.wrap-in .column .section h3 span{
+	color: #ddd;
+	font-size: 10px;
+	padding: 2%;
+}
+.wrap-in .column .sidebar{
+	width: 24%;
+	height: 100%;
+	float: right;
+	background: #fff;
+	overflow: hidden;
+}
+.wrap-in .main-pro{
+	margin: 50px 0;
+	height: 250px;
+}
+.wrap-in .main-pro .sidebar{
+	width: 27%;
+}
+.wrap-in .column .section ul.pro-list li{
+	width: 33.3%;
+	height: auto;
+	float: left;
+}
+.wrap-in .column.main-pro .sidebar img{
+	width: 170%;
+}
+
+/*----End-----*/
+/*----wrap第4模块--歌曲分类--*/
+.wrap-in .main-hot{
+	height: 320px;
+}
+.wrap-in .main-hot .sidebar{
+	float: left;
+}
+.wrap-in .main-hot .sidebar h3{
+	margin: 0 20px;
+	font-size: 18px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: solid 1px #ccc;
+}
+.wrap-in .main-hot .sidebar h3 i.icon{
+	width: 24px;
+	height: 22px;
+	display: block;
+	float: left;
+	margin: 21px 9px 0 0;
+	background: url('../image/iconblue.png') no-repeat center left;
+	background-position: -120px -90px;
+}
+.wrap-in .main-hot .sidebar ul li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.wrap-in .main-hot .sidebar ul li a{
+	color: #333;
+	display: block;
+}
+.wrap-in .main-hot .sidebar ul li a:hover{
+	color: #fff;
+	background: #B49DDB;
+}
+.wrap-in .main-hot .sidebar ul li a i{
+	width: 12px;
+	height: 12px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	background: url('../image/iconblue.png') no-repeat;
+	background-position: -90px 0;
+}
+.wrap-in .main-hot .sidebar a.hot-load{
+	line-height: 60px;
+	float: right;
+	padding: 0 30px;
+	font-size: 14px;
+	color: #ccc;
+}
+.wrap-in .main-hot .sidebar a.hot-load:hover{
+	color: #620DF0;
+}
+
+.wrap-in .main-hot .section{
+	height: 100%;
+	float: right;
+	background: #fff;
+}
+.wrap-in .main-hot .section ul {
+	overflow: hidden;
+}
+.wrap-in .main-hot .section ul li{
+	width: 30%;
+	height: 100%;
+	margin: 1% 0 0 10%;
+	float: left;
+	// overflow: hidden;
+}
+.wrap-in .main-hot .section ul li img{
+	background-size: 150%;
+}
+
+/*----End-----*/
+/*----wrap第5模块--排行榜--*/
+.wrap-in .main-rank {
+	width: 100%;
+	height: 600px;
+}
+.wrap-in .main-rank .section .rank{
+	margin: 15px;
+	height: 493px;
+	background: #f4f4f4;
+	border: solid 1px #ccc;
+	overflow: hidden;
+}
+.wrap-in .main-rank .section .rank dl{
+	width: 33.2%;
+	float: left;
+} 
+.wrap-in .main-rank .section .rank dl a{
+	color: #333;
+}
+
+.wrap-in .main-rank .section .rank dl a:hover{
+	text-decoration: underline;
+}
+.wrap-in .main-rank .section .rank dl dt{
+	padding: 20px;
+	height: 80px;
+} 
+.wrap-in .main-rank .section .rank dl dt .dt-img{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt{
+	width: 50%;
+	height: 80px;
+	float: left;
+	margin-left: 10px;
+	font-size: 16px;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.title{
+	width: 100%;
+	line-height: 30px;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.icon{
+	width: 22px;
+	height: 22px;
+	float: left;
+	display: block;
+	margin: 5px;
+	background: url('../image/index.png') no-repeat;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.icon-play {
+	background-position: -267px -205px;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.icon-play:hover {
+	background-position: -267px -235px;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.icon-store {
+	background-position: -300px -206px;
+}
+.wrap-in .main-rank .section .rank dl dt .dt-txt a.icon-store:hover {
+	background-position: -300px -236px;
+}
+
+.wrap-in .main-rank .section .rank dl dd{
+	width: 100%;
+	height: 34px;
+	float: left;
+	overflow: hidden;
+	line-height: 32px;
+}
+.wrap-in .main-rank .section .rank dl dd span{
+	color: red;
+	font-size: 16px;
+	display: block;
+	width: 20px;
+	text-align: center;
+	float: left;
+	text-align: center;
+	padding: 0 10px 0 20px;
+}
+.wrap-in .main-rank .section .rank dl dd a.title{
+	display: block;
+	max-width: 110px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	float: left;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper{
+	width: 90px;
+	float: right;
+	display: none;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a{
+	width: 17px;
+	height: 17px;
+	margin: 8px 5px;
+	display: block;
+	float: left;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-play {
+	background: url('../image/index.png');
+	background-position: -267px -268px;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-play:hover{
+	background-position: -267px -288px;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-add {
+	width: 15px;
+	background: url('../image/iconplay.png');
+	background-position: 0 -698px;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-add:hover{
+	background-position: -22px -698px;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-store {
+	background: url('../image/index.png');
+	background-position: -297px -268px;
+}
+.wrap-in .main-rank .section .rank dl dd .dd-oper a.icon-store:hover{
+	background-position: -297px -288px;
+}
+.wrap-in .main-rank .section .rank dl .dd{
+	width: 100%;
+	height: 34px;
+	float: left;
+	line-height: 32px;
+	background: #e8e8e8;
+}
+.wrap-in .main-rank .section .rank dl .dd a.dd-more{
+	float: right;
+	margin-right: 30px;
+}
+
+.wrap-in .main-rank .section .rank .blk-border{
+	width: 0.2%;
+	height: 100%;
+	float: left;
+	background: #ddd;
+}
+
+.wrap-in .main-rank .sidebar h3{
+	margin: 0 5%;
+	color: #888;
+	font-size: 16px;
+	line-height: 42px;
+	border-bottom: solid 1px #ccc;
+}	

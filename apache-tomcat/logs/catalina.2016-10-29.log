@@ -1,0 +1,8 @@
+29-Oct-2016 15:54:51.512 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Oct-2016 15:54:54.539 信息 [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Oct-2016 15:54:54.593 信息 [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+29-Oct-2016 15:54:54.639 信息 [localhost-startStop-4] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'Login_MVC-servlet': startup date [Fri Oct 28 11:38:08 CST 2016]; root of context hierarchy
+29-Oct-2016 15:54:54.660 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Oct-2016 15:54:54.667 信息 [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Oct-2016 15:54:54.671 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Oct-2016 15:54:54.672 信息 [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

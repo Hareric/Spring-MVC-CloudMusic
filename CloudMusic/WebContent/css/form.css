@@ -1,0 +1,87 @@
+/*
+*
+*/
+.wrap{
+	overflow: hidden;
+}
+.wrap form {
+	width: 520px;
+	height: 320px;
+	background: #fff;
+	border: solid 1px #bcbcbc;
+	border-radius: 5px;
+	margin: 50px;
+	float: right;
+}
+.wrap form .title{
+	width: 100%;
+	height: 45px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 45px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #555;
+}
+.wrap form .title h3{
+	float: left;
+	margin: 0 20px;
+}
+.wrap form .text,
+.wrap form .tips,
+.wrap form .operate,
+.wrap form .submit {
+
+	width: 220px;
+	margin: 10px auto;	
+}
+
+.wrap form .text-top{
+	margin-top: 30px;
+}
+.wrap form .text input{
+	width: 100%;
+	height: 28px;
+	text-indent: 5px;
+	border: solid 1px #cdcdcd;
+}
+.wrap form .tips {
+	height: 15px;
+	color: #e33232;
+}
+.wrap form .operate input{
+	height: 25px;
+	margin-right: 10px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+.wrap form .operate span{
+	float: right;
+}
+.wrap form .submit input{
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	letter-spacing: 10px;
+	margin: 10px auto;
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	background: #2273C2;
+	background: linear-gradient(rgba(65,145,218,1),rgba(37,118,200,1));
+}
+.wrap form .submit input:hover{
+	background: linear-gradient(rgba(90,160,230,1),rgba(52,131,210,1));
+}
+.wrap form .bottom{
+	height: 42px;
+	line-height: 42px;
+	background: #f7f7f7;
+	border-top: solid 1px #c6c6c6;
+}
+.wrap form .bottom a{
+	float: right;
+	color: #999;
+	cursor: pointer;
+	margin-right: 10px;
+}

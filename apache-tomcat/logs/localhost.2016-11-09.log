@@ -1,0 +1,25 @@
+09-Nov-2016 16:19:30.758 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:19:30.964 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:19:34.548 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:19:34.994 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'Login_MVC'
+09-Nov-2016 16:19:36.309 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-Nov-2016 16:19:36.309 信息 [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-Nov-2016 16:23:46.557 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:23:48.459 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:23:48.631 信息 [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:38:59.761 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:39:02.085 信息 [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:39:02.331 信息 [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:55:23.454 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:55:25.627 信息 [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:55:25.841 信息 [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:57:36.439 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:57:37.754 信息 [localhost-startStop-5] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:57:37.902 信息 [localhost-startStop-5] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:58:28.413 信息 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:58:29.989 信息 [localhost-startStop-6] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+09-Nov-2016 16:58:30.170 信息 [localhost-startStop-6] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:59:57.696 信息 [localhost-startStop-7] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+09-Nov-2016 16:59:57.696 信息 [localhost-startStop-7] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+09-Nov-2016 16:59:57.704 信息 [localhost-startStop-7] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'CloudMusic'
+09-Nov-2016 16:59:57.718 信息 [localhost-startStop-7] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'Login_MVC'

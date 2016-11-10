@@ -1,0 +1,3 @@
+29-Oct-2016 15:54:54.629 信息 [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+29-Oct-2016 15:54:54.629 信息 [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+29-Oct-2016 15:54:54.639 信息 [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'Login_MVC'
