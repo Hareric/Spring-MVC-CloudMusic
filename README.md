@@ -14,6 +14,8 @@ web服务器 Tomcat
 
 开发系统 mac OSX
 
+Mysql数据库
+
 ## 相关路径：
 controller： CloudMusic/src/controller
 
@@ -23,7 +25,11 @@ view:  CloudMusic/WebContent/WEB-INF/view
 
 
 ## 运行方法
-**终端**
+1、需要提前配置好mysql数据库，sql文件位于根目录 (music.sql)
+
+2、设置数据库参数 配置文件位于 apache-tomcat/webapps/CloudMusic/WEB-INF/classes/dbConfig.properties
+
+3、终端启动服务器
 ```
 cd apache-tomcat
 ./bin/catalina.sh run
