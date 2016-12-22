@@ -239,7 +239,7 @@
                         <div class="cur-inner">
                             <span class="btn-cur"><i></i></span>
                         </div>'
-                        <!-- <span class="btn-cur" id="data-cur"><i><!-- loading... --></i></span> -->
+                        <!-- <span class="btn-cur" id="data-cur"><i><!-- loading... --></i></span>
                     </div>
                 </div>
                 <span class="clock"><i>00:00</i> / <em>00:00</em></span>
@@ -287,17 +287,16 @@
     </audio>
 </div>
 
-<script type="text/javascript" src="../../../sea-modules/seajs/sea.js"></script>
+<script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
 <script type="text/javascript">
     
     //设置configuration
     seajs.config({
-        base: "../../../sea-modules",
+        
         alias: {
             "jquery" : "jquery/jquery.js"
         }
     });
-
     //引入main.js
     seajs.use('js/index/main');
 

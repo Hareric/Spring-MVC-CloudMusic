@@ -45,7 +45,7 @@ public class DbHelper {
 	 * 连接数据库
 	 */
 	private void connect() {
-		String url = String.format("jdbc:mysql://%s:%s/%s", this.ipAddress,
+		String url = String.format("jdbc:mysql://%s:%s/%s?useUnicode=true&characterEncoding=UTF-8", this.ipAddress,
 				this.port, this.dbName);
 		try {
 			this.conn = DriverManager.getConnection(url, this.user, this.pwd);
@@ -208,23 +208,30 @@ public class DbHelper {
 	 * @param rs
 	 * @throws SQLException
 	 */
-	public static void showResultSet(ResultSet rs) throws SQLException {
-		ResultSetMetaData rsmd = rs.getMetaData();
-		int columnCount = rsmd.getColumnCount();
-		// 输出列名
-		for (int i = 1; i <= columnCount; i++) {
-			System.out.print(rsmd.getColumnName(i));
-			System.out.print("(" + rsmd.getColumnTypeName(i) + ")");
-			System.out.print(" | ");
-		}
-		System.out.println();
-		// 输出数据
-		while (rs.next()) {
+	public static void showResultSet(ResultSet rs){
+		ResultSetMetaData rsmd;
+		try {
+			rsmd = rs.getMetaData();
+			int columnCount = rsmd.getColumnCount();
+			// 输出列名
 			for (int i = 1; i <= columnCount; i++) {
-				System.out.print(rs.getString(i) + "  |  ");
+				System.out.print(rsmd.getColumnName(i));
+				System.out.print("(" + rsmd.getColumnTypeName(i) + ")");
+				System.out.print(" | ");
 			}
 			System.out.println();
+			// 输出数据
+			while (rs.next()) {
+				for (int i = 1; i <= columnCount; i++) {
+					System.out.print(rs.getString(i) + "  |  ");
+				}
+				System.out.println();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+
 	}
 
 	/**

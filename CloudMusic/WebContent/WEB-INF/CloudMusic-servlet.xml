@@ -17,6 +17,8 @@
 	
     <mvc:resources mapping="/css/**" location="/css/"/>  
     <mvc:resources mapping="/image/**" location="/image/"/> 
+    <mvc:resources mapping="/sea-modules/**" location="/sea-modules/"/> 
+    <mvc:resources mapping="/con/**" location="/con/"/> 
     <mvc:annotation-driven />   
 
 	<bean
