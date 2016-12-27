@@ -1,5 +1,17 @@
 package model;
 
+import java.sql.SQLException;
+
+import model.db.Connector;
+import model.db.DbHelper;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.mysql.jdbc.ResultSet;
+import com.mysql.jdbc.ResultSetMetaData;
+
 /**
  * 
  * @author Eric_Chan
@@ -42,5 +54,50 @@ public class MusicModel {
 		this.listeners = listeners;
 	}
 	
+	/**
+	 * 获取音乐列表
+	 * @return
+	 */
+	public static String getLatestMusic(){
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT name, music_id, singer_name, src FROM app_singerRmusic"
+				+ " NATURAL JOIN app_Singer NATURAL JOIN app_Music LIMIT 20");
+		return DbHelper.resultSetToJson(rs);
+	}
+	
+	/**
+	 * 获取音乐排名列表
+	 * @param l
+	 * @return
+	 */
+	public static String getRankMusic(int l){
+		l++;
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("	SELECT name, music_id FROM app_musicRclass "
+				+ "NATURAL JOIN app_Music NATURAL JOIN app_Class WHERE class_id=? ORDER BY listeners DESC LIMIT 10", l);
+		return DbHelper.resultSetToJson(rs);
+	}
+	
+	/**
+	 * 获取单条音乐详细信息
+	 * @param id
+	 * @return
+	 */
+	public static String getMusicInfo(String id){
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT name, singer_name, src, music_id FROM "
+				+ "app_singerRmusic NATURAL JOIN app_Music NATURAL JOIN app_Singer WHERE music_id=?",id);
+		return DbHelper.resultSetToJson(rs);
+	}
+	public static String getMusicInfoSrc(String src){
+		System.out.println(src);
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT name, singer_name, src, music_id FROM "
+				+ "app_singerRmusic NATURAL JOIN app_Music NATURAL JOIN app_Singer WHERE src=?",src);
+		return DbHelper.resultSetToJson(rs);
+	}
+	public static void main(String args[]){
+		System.out.print(getRankMusic(0));
+	}
 	
 }

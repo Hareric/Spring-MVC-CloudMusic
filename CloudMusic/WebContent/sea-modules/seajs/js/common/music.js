@@ -25,7 +25,7 @@ define(function (require, exports, module) {
         this.audio = $('audio')[0];
         this.audio.volume = $('.play-ctrl .cbar .cur').height() / 100 ;
         this._bind();                   // 启动事件监听器
-        $.get('../controller/getMusic.php', function(res) {
+        $.get('index/getMusic', function(res) {
             self.json = $.parseJSON(res);
         });
     };
@@ -33,7 +33,7 @@ define(function (require, exports, module) {
 
     Player.prototype.init = function (data_id) {   // data.src, data.name, data.master
         var self = this;
-        $.get('../controller/getMInfo.php?id=' + data_id, function (res) {
+        $.get('index/getMInfo/' + data_id, function (res) {
             var json = $.parseJSON(res)[0];
             $('audio')[0].src = json.src;
             $('audio')[0].play();
@@ -214,7 +214,7 @@ define(function (require, exports, module) {
             var json = null,
                 data_src = self.audio.src;
 
-            $.get('../controller/getMInfo.php?src=' + data_src, function(res) {
+            $.get('index/getMSrc/harPattern' + data_src + 'harPattern', function(res) {
                 json = $.parseJSON(res)[0];
                 $('.play-ing .pbar .cur .cur-inner').width(0);
                 $('.play-ing .ptitle a.title').html(json.name);

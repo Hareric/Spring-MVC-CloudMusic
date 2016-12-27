@@ -2,6 +2,12 @@ package model.db;
 
 import java.sql.*;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.mysql.jdbc.ResultSetMetaData;
+
 /**
  * @author Eric_Chan
  * @version 2016.10.14
@@ -211,7 +217,7 @@ public class DbHelper {
 	public static void showResultSet(ResultSet rs){
 		ResultSetMetaData rsmd;
 		try {
-			rsmd = rs.getMetaData();
+			rsmd = (ResultSetMetaData) rs.getMetaData();
 			int columnCount = rsmd.getColumnCount();
 			// 输出列名
 			for (int i = 1; i <= columnCount; i++) {
@@ -323,6 +329,42 @@ public class DbHelper {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	/**
+	 * 将ResultSet 转化成 json
+	 * @param rs ResultSet
+	 * @return String json
+	 */
+	public static String resultSetToJson(ResultSet rs){
+		JSONArray array = new JSONArray();     
+		try {
+			// 获取列数  
+			ResultSetMetaData metaData;
+			metaData = (ResultSetMetaData) rs.getMetaData();
+			int columnCount = metaData.getColumnCount();  
+		    
+			   // 遍历ResultSet中的每条数据  
+			    while (rs.next()) {  
+			        JSONObject jsonObj = new JSONObject();  
+			         
+			        // 遍历每一列  
+			        for (int i = 1; i <= columnCount; i++) {  
+			            String columnName =metaData.getColumnLabel(i);  
+			            String value = rs.getString(columnName);  
+			            jsonObj.put(columnName, value);  
+			        }   
+			        array.put(jsonObj);   
+			    }  
+			    
+			   return array.toString();  
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch(JSONException e){
+			e.printStackTrace();
+		}
+		return "error";
 	}
 
 	public static void main(String args[]) throws SQLException {

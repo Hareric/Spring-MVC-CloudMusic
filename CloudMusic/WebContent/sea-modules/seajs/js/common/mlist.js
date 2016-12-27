@@ -108,7 +108,7 @@ define( function ( require, exports, module ) {
 					$(this).find('.col-2 a').hide();
 				},
 				dblclick : function() {
-					$.get('../controller/getMInfo.php?id=' + $(this).attr('data-id'), function(res) {
+					$.get('index/getMInfo/' + $(this).attr('data-id'), function(res) {
 						var json = $.parseJSON(res)[0];
 						$('audio')[0].src = json.src;
 						$('audio')[0].play();
@@ -187,7 +187,7 @@ define( function ( require, exports, module ) {
 			$('audio').on('canplay', function() {
 				var isset = false,
 					dataSrc = $('audio')[0].src;
-				$.get('../controller/getMInfo.php?src=' + dataSrc, function(res) {
+				$.get('index/getMSrc/harPattern' + dataSrc + 'harPattern', function(res) {
 					var json = $.parseJSON(res)[0],
 						dataID = json.music_id;
 

@@ -90,13 +90,12 @@ define( function( require, exports, module ) {
 			$('ul.aside-list').append(html).find('a').first().attr('class', 'active');		
 		});
 
-		rank(0);
 		rank(1);
 		rank(2);
-
+		rank(0);
 		function rank(i) {
 
-			$.get('../controller/getRank.php', {data: i}, function(res) {
+			$.get('index/getRank/' + i, function(res) {
 				var json = $.parseJSON(res);
 				var html = '';
 				$.each(json, function (index, value) {
@@ -218,7 +217,7 @@ define( function( require, exports, module ) {
 		}, this.rankLI ).on('click', this.rankLIPlay, function() {
 
 			var addID = $(this).parents('dd').attr('data-id');
-			$.get('../controller/getMInfo.php?id=' + addID, function(res) {
+			$.get('index/getMInfo/' + addID, function(res) {
 				var info = $.parseJSON(res)[0];
 				$('audio')[0].src = info.src;
 				$('audio')[0].play();
@@ -260,7 +259,7 @@ define( function( require, exports, module ) {
 				break;
 
 			} else if ( i == 0) {
-				$.get('../controller/getMInfo.php?id=' + addID, function(res) {
+				$.get('index/getMInfo/' + addID, function(res) {
 					var info = $.parseJSON(res)[0];
 					html = '<li data-id="' + info.music_id + '">' +
 						'<div class="abs-stus"><span class="icn-stus"></span></div>' +
