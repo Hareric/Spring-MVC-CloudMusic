@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%> 
 <html lang="en">
 <head>
@@ -46,31 +46,30 @@
 
 <div class="wrap">
 	<div class="wrap-in">
-
-	    <form name="login" method="post" action="../controller/checkLogin.php">
-	    	<div class="title">
+			<form:form method="POST" action="/CloudMusic/userLogin" commandName="log" >
+		    	<div class="title">
 	    		<h3>邮箱登录</h3>
-	    	</div>
-	        <div class="text text-top">
-	            <input type="text" name="user" placeholder="邮箱">
-	        </div>
-	        <div class="text">
-	            <input type="password" name="pwd" placeholder="密码">
-	        </div>
-	        <div class="tips">
-	        	<!-- 帐号或密码不匹配 -->
-	        </div>
-	        <div class="operate">
-	        	<input type="checkbox" id="autoLogin"><label for="autoLogin">自动登录</label>
-	        	<span>忘记密码?</span>
-	        </div>
-	        <div class="submit">
-	        	<input type="submit" value="登录">
-	        </div>
-	        <div class="bottom">
-	        	<a href="./reg">没有帐号？免费注册 > </a>
-	        </div>
-	    </form>
+		    	</div>
+		        <div class="text text-top">
+		            <form:input type="text" path="email" placeholder="邮箱"/>
+		        </div>
+		        <div class="text">
+		            <form:input  type="password" path="pwd" placeholder="密码"/>
+		        </div>
+		        <div class="tips">
+		        	${login_status}<!-- 帐号或密码不匹配 -->
+		        </div>
+		        <div class="operate">
+		        	<input type="checkbox" id="autoLogin"><label for="autoLogin">自动登录</label>
+		        	<span>忘记密码?</span>
+		        </div>
+		        <div class="submit">
+		        	<input type="submit" value="登录">
+		        </div>
+		        <div class="bottom">
+		        	<a href="reg">没有帐号？免费注册 > </a>
+		        </div>
+	    </form:form>
 
 	</div>
 </div>
@@ -169,17 +168,16 @@
     </audio>
 </div>
 
-<script type="text/javascript" src="../../../sea-modules/seajs/sea.js"></script>
+<script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
 <script type="text/javascript">
     
     //设置configuration
     seajs.config({
-        base: "../../../sea-modules",
+        
         alias: {
             "jquery" : "jquery/jquery.js"
         }
     });
-
     //引入main.js
     seajs.use('js/login/main');
 

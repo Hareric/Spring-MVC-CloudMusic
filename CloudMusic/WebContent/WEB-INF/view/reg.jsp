@@ -173,17 +173,16 @@
     </audio>
 </div>
 
-<script type="text/javascript" src="../../../sea-modules/seajs/sea.js"></script>
+<script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
 <script type="text/javascript">
     
     //设置configuration
     seajs.config({
-        base: "../../../sea-modules",
+        
         alias: {
             "jquery" : "jquery/jquery.js"
         }
     });
-
     //引入main.js
     seajs.use('js/reg/main');
 

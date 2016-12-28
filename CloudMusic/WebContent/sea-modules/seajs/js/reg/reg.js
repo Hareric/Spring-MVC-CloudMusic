@@ -6,7 +6,6 @@ define ( function ( require, exports, module ) {
 		this.pwd = 'form input[name=pwd]';
 		this.repwd = 'form input[name=repwd]';
 		this.submit = 'form input[type=submit]';
-
 		this.tips = 'form .tips';
 	}
 
@@ -48,19 +47,18 @@ define ( function ( require, exports, module ) {
 			if ( !!$.trim($(self.name).val()) && !!$.trim($(self.name).val()) && !!$.trim($(self.pwd).val()) && !!$.trim($(self.repwd).val()) ) {
 
 				$.ajax({
-					url : '../controller/checkReg.php',
+					url : '/CloudMusic/userRegister',
 					type : 'POST',
 					data : $('form').serialize(),
-					beforeSend : function () {
-						$(self.submit).remove();
-					},
-					success : function( response, status, xhr ) {
-						if (response != 'false') {
+					success : function(response) {
+						if(/^\d+$/.test(response)){  
 							cookie('unique', response);
-							window.location.href = './index.html';
-						} else {
-							$(self.tips).html('提交失败，请稍候重试');
-						}
+							$(self.tips).html("注册成功");
+							window.location.href = './index';  
+							
+					    }else{  
+					    	$(self.tips).html(response);
+					    }  
 					}
 
 				});

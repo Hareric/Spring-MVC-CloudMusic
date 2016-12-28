@@ -30,7 +30,7 @@ define( function ( require, exports, module ) {
 		this.index = -1;
 
 		if ( document.cookie ) {
-			$.post('../controller/getUInfo.php', {id : cookie('unique')}, function( data, status ) {
+			$.get('My/getUInfo/uid='+cookie('unique'),function(data)  {
 				$(self.memb).show();
 				$(self.user).html(data);
 			});
@@ -72,7 +72,7 @@ define( function ( require, exports, module ) {
 					this.value = $(self.resultLI).eq(self.index).find('.result-name').html();
 
 				} else if ( !!$.trim(this.value )) {
-					$.post('../controller/search.php', { content:$.trim(this.value) }, function (res) {
+					$.post('../controller/search', { content:$.trim(this.value) }, function (res) {
 						var html = '';
 						if ( res == 'false' ) {
 							html = '搜索结果 -- 0条匹配';

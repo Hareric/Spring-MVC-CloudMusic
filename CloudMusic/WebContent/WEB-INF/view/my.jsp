@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%> 
 <html lang="en">
 <head>
@@ -56,7 +55,6 @@
         <div class="main-title column">
             <div class="title-img"></div>
             <div class="title-info">
-                <a href="./upload"><button type="button">上传音乐</button></a>
                 <h3><span></span><input type="button" value="编辑个人资料"></h3>
                 <div class="sml sml-area">所在地区：广东省-汕头市</div>
                 <div class="sml sml-age">年龄：00后</div>
@@ -176,17 +174,16 @@
     </audio>
 </div>
 
-<script type="text/javascript" src="../../../sea-modules/seajs/sea.js"></script>
+<script type="text/javascript" src="sea-modules/seajs/sea.js"></script>
 <script type="text/javascript">
     
     //设置configuration
     seajs.config({
-        base: "../../../sea-modules",
+        
         alias: {
             "jquery" : "jquery/jquery.js"
         }
     });
-
     //引入main.js
     seajs.use('js/my/main');
 

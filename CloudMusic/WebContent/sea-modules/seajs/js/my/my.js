@@ -24,9 +24,7 @@ define ( function ( require, exports, module ) {
 		var self = this;
 
 		if ( document.cookie ) {
-			$.post('../controller/getUInfo.php',{
-				id : cookie('unique')
-			}, function( data, status ) {
+			$.get('My/getUInfo/uid='+cookie('unique'),function(data) {
 				$(self.user).html(data);
 			});
 
@@ -34,7 +32,7 @@ define ( function ( require, exports, module ) {
 			history.go(-1);
 		}
 
-		$.post('../controller/myMusic.php', {uid:cookie('unique')}, function (res) {
+		$.get('My/myMusic/uid='+cookie('unique'), function (res) {
 			var json = $.parseJSON(res);
 			var html = '';
 			$.each(json, function ( index, value ) {
@@ -56,17 +54,17 @@ define ( function ( require, exports, module ) {
 			$(self.mul).append(html);
 		});
 
-		$.get('../controller/myFriend.php', {uid: cookie('unique')}, function (res) {
-			var json = $.parseJSON(res);
-			var html = '';
-			$.each(json, function ( index, value ) {
-				html += '<li data-id="' + value.friend_id + '">' + 
-							value.name + 
-						'</li>';
-			});
-
-			$('.main-mfriend ul').append(html);
-		});
+//		$.get('../controller/myFriend', {uid: cookie('unique')}, function (res) {
+//			var json = $.parseJSON(res);
+//			var html = '';
+//			$.each(json, function ( index, value ) {
+//				html += '<li data-id="' + value.friend_id + '">' + 
+//							value.name + 
+//						'</li>';
+//			});
+//
+//			$('.main-mfriend ul').append(html);
+//		});
 
 	}
 
@@ -89,7 +87,7 @@ define ( function ( require, exports, module ) {
 		}, this.mlist ).on('click', this.listBtnPlay, function () {
 
 			var mid = $(this).parents('li').attr('data-id');
-			$.get('../controller/getMInfo.php?id=' + mid, function(res) {
+			$.get('index/getMInfo/' + mid, function(res) {
 				var json = $.parseJSON(res)[0];
 				$('audio')[0].src = json.src;
 				$('audio')[0].play();
@@ -107,7 +105,7 @@ define ( function ( require, exports, module ) {
 			if( !!cookie('unique') ) {
 				var obj = $(this).parents('li');
 				var delID = $(obj).attr('data-id');
-				$.get('../controller/delMusic.php', {'uid':cookie('unique'), 'mid':delID} );
+				$.get('../controller/delMusic', {'uid':cookie('unique'), 'mid':delID} );
 				$(obj).remove();
 			}
 			

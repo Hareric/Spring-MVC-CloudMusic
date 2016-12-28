@@ -4,10 +4,9 @@
 define( function ( require, exports, module ) {
 
 	function Login() {
-		this.user = '.wrap form input[name=user]';
+		this.user = '.wrap form input[name=email]';
 		this.pwd = '.wrap form input[name=pwd]';
 		this.submit = '.wrap form input[type=submit]';
-
 		this.tips = '.wrap form .tips';
 	}
 
@@ -39,16 +38,24 @@ define( function ( require, exports, module ) {
 
 			if ( $.trim($(self.user).val()) != '' && $.trim($(self.pwd).val()) != '' ) {
 				$.ajax({
-					url : '../controller/checkLogin.php',
+					url : 'userLogin',
 					type : 'POST',
 					data : $('form').serialize(),
-					success : function( response, status, xhr ) {
-						if (response && response != 'false') {
+					success : function( response) {
+//						if (response && response != 'false') {
+//							cookie('unique', response);
+//							window.location.href = './index.html';
+//						} else {
+//							$(self.tips).html('帐号与密码不匹配，请重新输入');
+//						}
+						if((/^\d+$/.test(response))){  
 							cookie('unique', response);
-							window.location.href = './index.html';
-						} else {
-							$(self.tips).html('帐号与密码不匹配，请重新输入');
-						}
+							$(self.tips).html("登录成功");
+							window.location.href = './index';  
+							
+					    }else{  
+					    	$(self.tips).html(response);
+					    }  
 					}
 
 				});

@@ -2,7 +2,8 @@ package model;
 
 import java.util.Random;
 import java.sql.Date;
-
+import java.sql.SQLException;
+import com.mysql.jdbc.ResultSet;
 import model.db.Connector;
 import model.db.DbHelper;
 
@@ -120,8 +121,8 @@ public class UserModel {
 		DbHelper connector = Connector.getInstance();
 		connector.executeUpdate("INSERT INTO `app_User` (`email`, `pwd`, `id`, `regDate`, `root`) VALUES (?, ?, ?, ?, ?)",
 				this.email, this.pwd, this.id, this.regDate, this.root);
-		connector.executeUpdate("INSERT INTO `app_Info` (`user_id`, `name`, `image`) VALUES (?, ?, ?')",
-				this.id, this.name, "https://lh3.googleusercontent.com/-pEKVkqtRgng/AAAAAAAAAAI/AAAAAAAAAAA/AEMOYSAOYCjOu6PGJxyVf1asIPCUerxhww/mo/photo.jpg?sz=46");
+		connector.executeUpdate("INSERT INTO `app_Info` (`user_id`, `name`, `image`) VALUES (?, ?, ?)",
+				this.id, this.name, "image/profile.jpg");
 	}
 	public String register(){
 		DbHelper connector = Connector.getInstance();
@@ -143,8 +144,49 @@ public class UserModel {
 			this.id = Math.abs(random.nextInt());
 		}
 		this.saveSql();
-		return "注册成功";
+		return String.valueOf(this.id);
 	}
+	
+	public String login(){
+		DbHelper connector = Connector.getInstance();
+		Boolean isCorrectEmail = connector.isExist("SELECT email, pwd, id, root FROM app_user WHERE email=?", this.email);
+		if (!isCorrectEmail){
+			return "该邮箱尚未注册";
+		}
+		Boolean isCorrectPWD = connector.isExist("SELECT email, pwd, id, root FROM app_user WHERE email=? AND pwd=?", this.email, this.pwd);
+		if (!isCorrectPWD){
+			return "密码有误";
+		}
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT id FROM app_user "
+				+ "WHERE email=?", this.email);
+		try{
+			rs.next();
+			return rs.getString(1);
+		}catch (SQLException ex){
+			ex.printStackTrace();
+		}
+		return "27";
+		
+	}
+	
+	public static String getUserInfo(String uid){
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT name FROM app_info WHERE user_id=?", uid);
+		try{
+			rs.next();
+			return rs.getString(1);
+		}catch (SQLException ex){
+			ex.printStackTrace();
+		}
+		return "Eric";
+	}
+	
+	public static String getMyMusic(String uid){
+		DbHelper connector = Connector.getInstance();
+		ResultSet rs = (ResultSet) connector.executeQuery("SELECT music_id, name, singer_name FROM app_collection NATURAL JOIN app_Music NATURAL JOIN app_singerRmusic NATURAL JOIN app_Singer WHERE user_id=? ORDER BY colDate DESC", uid);
+		return DbHelper.resultSetToJson(rs);
+	}
+	
 	
 //	public static void main(String args[]){
 //		DbHelper connector = Connector.getInstance();

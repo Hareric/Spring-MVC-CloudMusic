@@ -122,7 +122,7 @@ define( function ( require, exports, module ) {
 
 				} else {
 					var trgid = $(this).parents('li').attr('data-id');
-					$.get('../controller/colMusic.php', {
+					$.get('index/colMusic', {
 						uid : cookie('unique'),
 						mid : trgid
 					}, function (result) {

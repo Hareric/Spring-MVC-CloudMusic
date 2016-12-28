@@ -90,14 +90,33 @@ public class MusicModel {
 		return DbHelper.resultSetToJson(rs);
 	}
 	public static String getMusicInfoSrc(String src){
-		System.out.println(src);
 		DbHelper connector = Connector.getInstance();
 		ResultSet rs = (ResultSet) connector.executeQuery("SELECT name, singer_name, src, music_id FROM "
 				+ "app_singerRmusic NATURAL JOIN app_Music NATURAL JOIN app_Singer WHERE src=?",src);
 		return DbHelper.resultSetToJson(rs);
 	}
+
+	
+	public static String colMusic(String uid, String mid){
+		System.out.println(uid + " " + mid);
+		DbHelper connector = Connector.getInstance();
+		Boolean hasCollected = connector.isExist("SELECT id FROM app_collection WHERE user_id=? AND music_id=?", uid, mid);
+		if(hasCollected){
+			return "已收藏过该歌曲";
+		}
+		connector.executeUpdate("INSERT INTO app_collection (user_id, music_id, colDate) VALUES (?, ?, NOW())", uid, mid);
+		return "收藏成功";
+		
+	}
+	
 	public static void main(String args[]){
-		System.out.print(getRankMusic(0));
+		DbHelper connector = Connector.getInstance();
+		Boolean hasCollected = connector.isExist("SELECT id FROM app_collection WHERE user_id=? AND music_id=?", "1575788652", "24");
+		if(hasCollected){
+			System.out.print( "已收藏过该歌曲");
+		}
+		connector.executeUpdate("INSERT INTO app_collection (user_id, music_id, colDate) VALUES (?, ?, NOW())", "1575788652", "24");
+		System.out.print( "收藏成功");
 	}
 	
 }

@@ -196,9 +196,6 @@ define( function( require, exports, module ) {
 						alert(res);
 					}
 				});
-				// $.post('../controller/colMusic.php', {uid : cookie('unique'), type:t}, function(result) {
-				// 	alert('收藏成功');
-				// });
 			} else {
 				alert('您尚未登录');
 			}
@@ -235,10 +232,7 @@ define( function( require, exports, module ) {
 
 			} else {
 				var trgid = $(this).parents('dd').attr('data-id');
-				$.get('index/colMusic', {
-					uid : cookie('unique'),
-					mid : trgid
-				}, function (result) {
+				$.get('index/colMusic/mid='+trgid+'uid='+cookie('unique'), function (result) {
 					alert(result);
 				});
 			}
