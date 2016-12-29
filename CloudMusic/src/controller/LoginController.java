@@ -18,6 +18,7 @@ class LoginController {
 		return new ModelAndView("login", "log", new UserModel());
 	}
 	
+	// 用户登录
 	@RequestMapping(value = "/userLogin", method = RequestMethod.POST,
 			produces="text/html;charset=utf-8")
 	@ResponseBody

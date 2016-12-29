@@ -54,18 +54,6 @@ define ( function ( require, exports, module ) {
 			$(self.mul).append(html);
 		});
 
-//		$.get('../controller/myFriend', {uid: cookie('unique')}, function (res) {
-//			var json = $.parseJSON(res);
-//			var html = '';
-//			$.each(json, function ( index, value ) {
-//				html += '<li data-id="' + value.friend_id + '">' + 
-//							value.name + 
-//						'</li>';
-//			});
-//
-//			$('.main-mfriend ul').append(html);
-//		});
-
 	}
 
 	My.prototype._bind = function () {

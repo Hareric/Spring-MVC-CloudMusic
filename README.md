@@ -25,7 +25,7 @@ view:  CloudMusic/WebContent/WEB-INF/view
 
 
 ## 运行方法
-1、需要提前配置好mysql数据库，sql文件位于根目录 (music.sql)
+1、需要提前配置好mysql数据库，sql文件位于根目录 (DDL.sql DML.sql)
 
 2、设置数据库参数 配置文件位于 apache-tomcat/webapps/CloudMusic/WEB-INF/classes/dbConfig.properties
 

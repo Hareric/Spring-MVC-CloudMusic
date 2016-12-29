@@ -186,12 +186,4 @@ public class UserModel {
 		ResultSet rs = (ResultSet) connector.executeQuery("SELECT music_id, name, singer_name FROM app_collection NATURAL JOIN app_Music NATURAL JOIN app_singerRmusic NATURAL JOIN app_Singer WHERE user_id=? ORDER BY colDate DESC", uid);
 		return DbHelper.resultSetToJson(rs);
 	}
-	
-	
-//	public static void main(String args[]){
-//		DbHelper connector = Connector.getInstance();
-//		connector.executeUpdate("INSERT INTO `app_User` (`email`, `pwd`, `id`, `regDate`, `root`) VALUES (?, ?, ?, ?, ?)",
-//				"qwd@qq.com", "1q2w3e", 13413, new Date(1,2,3), 0);
-//		
-//	}
 }

@@ -1,7 +1,6 @@
 package controller;
 
 
-import model.MusicModel;
 import model.UserModel;
 
 import org.springframework.stereotype.Controller;
@@ -17,6 +16,7 @@ class MyController {
 		return "my";
 	}
 	
+	// 获取用户信息
 	@RequestMapping (value="My/getUInfo/uid={uid}", method=RequestMethod.GET,
 			produces="text/html;charset=utf-8")
 	@ResponseBody
@@ -24,6 +24,7 @@ class MyController {
 		return UserModel.getUserInfo(uid);
 	}
 	
+	// 获取用户收藏的音乐
 	@RequestMapping (value="My/myMusic/uid={uid}", method=RequestMethod.GET,
 			produces="text/html;charset=utf-8")
 	@ResponseBody

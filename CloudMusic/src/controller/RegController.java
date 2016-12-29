@@ -18,6 +18,7 @@ class RegController {
 		return new ModelAndView("reg", "register", new UserModel());	
 	}
 	
+	// 用户注册
 	@RequestMapping(value = "/userRegister", method = RequestMethod.POST,
 			produces="text/html;charset=utf-8")
 	@ResponseBody
