@@ -42,4 +42,5 @@ cd apache-tomcat
 1、若运行.sh文件 报permisison denied， 则在终端运行 chmod +x catalina.sh 修改权限
 
 ![CloudMusicIndex][1]
-  [1]: http://oevwfwaro.bkt.clouddn.com/CloudMusicIndex.png
+
+  [1]: https://raw.githubusercontent.com/Hareric/tuchuang/master/graph/CloudMusicIndex.png
